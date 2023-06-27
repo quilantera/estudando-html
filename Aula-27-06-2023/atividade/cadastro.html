@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="author" content="Gustavo Quilante Azevedo">
+  <meta name="description" content="Formulário de cadastro de usuário">
+  <meta name="keywords" content="html, form, singUp ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+</head>
+<body style=" display:grid; justify-content: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+  <h1>Cadastro do Usuário</h1>
+  <form action="" style=" display:grid;  justify-content: center;" >
+    <fieldset>
+      <legend>Informações pessoais</legend>
+      <table>
+        <tr>
+          <td><label for="nome-e-sobrenome">Nome e Sobrenome:</label></td>
+          <td><input type="text" name="nome-e-sobrenome" maxlength="200" minlength="3" id="nome-e-sobrenome" required placeholder="Gustavo Quilante"> * 
+          </td>
+        </tr>
+        <tr>
+          <td><label for='email'>E-mail</label></td> 
+          <td><input type="email" name="email" id="email" placeholder="exemple@example.com" required> * </td>
+        </tr>
+        <tr>
+          <td><label for='senha'>Senha</label></td>
+          <td><input type="password" id="senha" name="senha" pattern=".{8,}" required>*</td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+    <legend>Informações de endereço</legend>
+    <table>
+      <tr>
+        <td> <label for='uf'>UF</label></td>
+        <td>
+          <select  name="uf" id="uf" required>
+            <option disabled selected > selecione um estado</option>
+            <option value="sp">SP</option>
+            <option value="mg">MG</option>
+            <option value="pr">PR</option>
+            <option value="outros">outros</option>
+          </select> *
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cidade">Cidade</label></td> 
+        <td> <input type="text" name="cidade" maxlength="200" minlength="3" id="cidade" required placeholder="São Paulo"> * 
+        </td>
+      </tr>
+      <tr>
+        <td> <label for="rua">Rua</label></td>
+        <td><input type="text" name="rua" maxlength="300" minlength="3" id="rua" required placeholder="Capivim Mirim"> * </td>
+      </tr>
+      <tr>
+        <td><label for="numero">Número</label></td>
+        <td><input type="text" name="numero" maxlength="10" minlength="3" id="numero" required placeholder="999"> * 
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cep"> CEP </label></td>
+        <td><input type="text" name="cep" maxlength="9"  id="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="99999-999" ></td>
+      </tr>
+  </table>
+  </fieldset>
+  <fieldset>
+    <legend>Informações de atuação</legend>
+  <table>
+    <tr>
+      <td><label for="bio">Descrição Pessoal</label></td>
+      <td>
+        <textarea name="bio"  cols="60" rows="5" minlength="3" id="bio" required > 
+          Ola, sou o Fulano, estou sempre em busca de novas experiências.
+        </textarea> * 
+      </td>
+    </tr>
+    <tr>
+    <span>Area de atuação</span>
+    </tr>
+    <tr>
+      <td><label for="fullstack">FullStack</label></td>
+      <td><input type="radio" name="area-de-atuação" id="fullstack" checked required></td>
+    </tr>
+
+    <tr>
+      <td><label for="cloud">Cloud</label></td>
+      <td><input type="radio" name="area-de-atuação" id="cloud" required></td>
+    </tr>
+   <tr>
+      <td><label for="outros">Outros</label></td>
+      <td><input type="radio" name="area-de-atuação" id="outros" required></td>
+    </tr>
+  </table>
+    <button> Cadastrar</button>
+    <button type="reset"> Limpar</button>
+    
+  </fieldset>
+  </form>
+   <p> ja possui cadastro? <a href="login.html">clique aqui</a> </p>
+</body>
+</html>

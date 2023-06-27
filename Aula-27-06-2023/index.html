@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout da Página</title>
+</head>
+<body>
+
+  <h1>Layout da Página</h1>
+  <h2>Cadastro de Super Herói</h2>
+  <!-- 
+    GET -> Envia pela URL
+    POST -> Envia por pacote de Requisição
+  -->
+  <form action="">
+    <fieldset>
+
+      <legend>Informações pessoais</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome"  id="nome" maxlength="100" required>
+      <br>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" maxlength="200" required >
+      <br>
+
+      <label for="poderes"> Poderes: </label>
+      <input type="text" name="poderes" id="poderes" maxlength="500" required  placeholder="Digite seus poderes separadamente por virgula">
+      
+    </fieldset>
+    <fieldset>
+      <legend>Informações do endereço</legend>
+      <label for="rua"> rua: </label>
+      <input type="text" name="rua" id="rua" maxlength="150" required  >
+      <br>
+
+      <label for="numero"> numero: </label>
+      <input type="text" name="numero" id="numero"  maxlength="10" required  >
+      <br>
+      <label for="UF"> UF: </label>
+      <input type="text" name="UF" id="UF" maxlength="2" required  >
+      <br>
+      <label for="cidade"> cidade: </label>
+      <input type="text" name="cidade" id="cidade" maxlength="150" required  >
+      <br>
+    </fieldset>
+    
+    <button> Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="author" content="Gustavo Quilante Azevedo">
+  <meta name="description" content="Formulário de login">
+  <meta name="keywords" content="html, form, SingIn ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body style=" display:grid; justify-content: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+  <h1>Login do Usuário</h1>
+  <form action="" style="width: 300px; min-width: 400px; display:flex; justify-content: center;">
+    <fieldset style="width: 100%;">
+      <legend>Login</legend>
+      <table>
+        <tr>
+          <td> <label for="email">Email</label></td>
+          <td> <input type="email" name="email" id="email" maxlength="200" required > </td>
+        </tr>
+        <tr>
+          <td><label for="senha"> Senha </label></td>
+          <td><input type="password" name="senha" id="senha" pattern=".{8,}"  required ></td>
+        </tr>
+        <tr>
+          <td> <label for="lembrar-de-mim">Lembrar de mim</label></td>
+          <td><input type="checkbox" name="lembrar-de-mim" id="lembrar-de-mim"></td> 
+        </tr>
+      <br>
+    </table>
+      <button>Enviar</button>
+      <p>Não possui conta? <a href="cadastro.html"> cadastrar </a></p>
+    </fieldset>
+
+  </form>
+</body>
+</html>
